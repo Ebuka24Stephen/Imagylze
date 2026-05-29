@@ -70,20 +70,6 @@ python manage.py migrate
 - Redis
 - Pillow
 
-## Project Structure
-
-imagylze/
-│── imagylze/
-│   ├── settings.py
-│   ├── celery.py
-│── app/
-│   ├── models.py
-│   ├── views.py
-│   ├── tasks.py
-│   ├── serializers.py
-│── media/
-│   ├── uploads/
-│   ├── processed/
 
 ## Notes
 
