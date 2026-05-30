@@ -2,8 +2,6 @@
 from celery import shared_task
 from django.conf import settings
 from django.core.files import File
-
-import task
 from .models import ImageTask
 from PIL import Image
 import os
