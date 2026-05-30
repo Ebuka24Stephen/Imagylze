@@ -19,3 +19,4 @@ class ImageTask(models.Model):
     status = models.CharField(max_length=20, choices=TaskStatus.choices, default=TaskStatus.PENDING)
     height = models.IntegerField(null=True, blank=True)
     width = models.IntegerField(null=True, blank=True)
+    output_image = models.ImageField(upload_to='output_images/', null=True, blank=True)
