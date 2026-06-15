@@ -18,17 +18,16 @@ Client → Django API → Database (Task Created) → Celery Worker → Pillow P
 
 ## API Endpoints
 
-/api/uploads/
-
 ### Create Image Task
-POST /api/image-tasks/
+**POST** `/api/image-tasks/`
 
-Form-data:
-- image (file)
-- width (int)
-- height (int)
+**Form-data:**
+- `image` (file)
+- `width` (int)
+- `height` (int)
 
-Response:
+**Response:**
+```json
 {
     "id": 20,
     "image": "/media/images/filename.png",
@@ -36,7 +35,7 @@ Response:
     "height": 200,
     "width": 400
 }
----
+```
 
 ## Workflow
 
@@ -50,17 +49,18 @@ Response:
 ## Installation
 
 ### Clone repo
+```bash
 git clone https://github.com/Ebuka24Stephen/imagylze.git
-
 cd imagylze
+```
 
+### Set up environment
+```bash
 python -m venv venv
-
 source venv/bin/activate
-
 pip install -r requirements.txt
-
 python manage.py migrate
+```
 
 ## Tech Stack
 
